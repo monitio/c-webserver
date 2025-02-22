@@ -1,0 +1,10 @@
+$W = ^*.windows
+$O = ^*.other
+
+# WINDOWS:
+# rust building
+{W}1 - ("gcc src/main.c -o dist/cwebserver -lws2_32")
+
+# LINUX/OTHER:
+# rust building
+{O}1 - ("gcc src/main.c -o dist/cwebserver")
